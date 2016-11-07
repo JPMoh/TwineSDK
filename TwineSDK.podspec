@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name              = 'TwineSDK'
-    s.version           = ''
+    s.version           = '1.0'
     s.summary           = 'Description of your project'
     s.homepage          = 'https://github.com/JPMoh/TwineSDK'
     s.license           = {
