@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
         :git => 'https://github.com/JPMoh/TwineSDK.git',
         :tag => s.version.to_s
     }
-    s.source_files      = 'Sources/TwineSDK/*.swift'
+    s.source_files      = 'Sources/TwineSDK/TwineIdentityViewController.swift'
     s.requires_arc      = true
 
 end
