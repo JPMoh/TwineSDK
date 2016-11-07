@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19877E12C53C7FC285BA7AE6 /* Pods_TwineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E29B2A9BB8ECFAEBF4776E /* Pods_TwineSDK.framework */; };
+		E8379E711DC3845F008E9C0F /* TwineDeviceResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8379E701DC3845F008E9C0F /* TwineDeviceResultTests.m */; };
+		E84CEAE51DA2B32D00F252FF /* TwineLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84CEAE41DA2B32D00F252FF /* TwineLocationViewController.swift */; };
+		E84CEAEB1DA2FC4F00F252FF /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84CEAEA1DA2FC4F00F252FF /* ViewControllerExtension.swift */; };
+		E8503E941DCD205F00D3FB57 /* TWRUploadScanResultOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E6C1DCD205E00D3FB57 /* TWRUploadScanResultOperation.m */; };
+		E8503E951DCD205F00D3FB57 /* TwineUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E6D1DCD205E00D3FB57 /* TwineUtil.m */; };
+		E8503E961DCD205F00D3FB57 /* TwineDemographicsMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E6F1DCD205E00D3FB57 /* TwineDemographicsMessage.m */; };
+		E8503E971DCD205F00D3FB57 /* TwineScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E711DCD205E00D3FB57 /* TwineScanManager.m */; };
+		E8503E981DCD205F00D3FB57 /* TwineSignalManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E731DCD205E00D3FB57 /* TwineSignalManager.m */; };
+		E8503E991DCD205F00D3FB57 /* TWRScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E751DCD205E00D3FB57 /* TWRScanManager.m */; };
+		E8503E9A1DCD205F00D3FB57 /* TWRScanResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E781DCD205E00D3FB57 /* TWRScanResult.m */; };
+		E8503E9B1DCD205F00D3FB57 /* TwineIdentityMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E791DCD205E00D3FB57 /* TwineIdentityMessage.m */; };
+		E8503E9C1DCD205F00D3FB57 /* TwineIdentityResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E7B1DCD205E00D3FB57 /* TwineIdentityResult.m */; };
+		E8503E9D1DCD205F00D3FB57 /* TWRBluetoothScanOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E7D1DCD205E00D3FB57 /* TWRBluetoothScanOperation.m */; };
+		E8503E9E1DCD205F00D3FB57 /* TwineDemographicsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E7E1DCD205E00D3FB57 /* TwineDemographicsResult.m */; };
+		E8503E9F1DCD205F00D3FB57 /* TwineDeviceResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E7F1DCD205E00D3FB57 /* TwineDeviceResult.m */; };
+		E8503EA01DCD205F00D3FB57 /* TwineEventResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E801DCD205E00D3FB57 /* TwineEventResult.m */; };
+		E8503EA11DCD205F00D3FB57 /* TwineLocationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E811DCD205E00D3FB57 /* TwineLocationResult.m */; };
+		E8503EA21DCD205F00D3FB57 /* TwineEventMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E831DCD205E00D3FB57 /* TwineEventMessage.m */; };
+		E8503EA31DCD205F00D3FB57 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E861DCD205F00D3FB57 /* NSString+MD5.m */; };
+		E8503EA41DCD205F00D3FB57 /* TWRLocationScanOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E881DCD205F00D3FB57 /* TWRLocationScanOperation.m */; };
+		E8503EA51DCD205F00D3FB57 /* TWRBLEPeripheralResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E8B1DCD205F00D3FB57 /* TWRBLEPeripheralResult.m */; };
+		E8503EA61DCD205F00D3FB57 /* TWRDeviceScanOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E8E1DCD205F00D3FB57 /* TWRDeviceScanOperation.m */; };
+		E8503EA71DCD205F00D3FB57 /* TWRWifiScanOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503E931DCD205F00D3FB57 /* TWRWifiScanOperation.m */; };
+		E88CE4201DC25B7F007AB7E3 /* TwineSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E88CE41F1DC25B7F007AB7E3 /* TwineSDKTests.m */; };
+		E88CE4281DC32975007AB7E3 /* TwineDemographicsResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E88CE4271DC32975007AB7E3 /* TwineDemographicsResultTests.m */; };
+		E88CE42A1DC3298C007AB7E3 /* TwineEventResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E88CE4291DC3298C007AB7E3 /* TwineEventResultTests.m */; };
+		E88CE42C1DC3299E007AB7E3 /* TwineIdentityResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E88CE42B1DC3299E007AB7E3 /* TwineIdentityResultTests.m */; };
+		E88CE42E1DC329AC007AB7E3 /* TwineLocationResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E88CE42D1DC329AC007AB7E3 /* TwineLocationResultTests.m */; };
+		E88CE4301DC33813007AB7E3 /* TwineUtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E88CE42F1DC33813007AB7E3 /* TwineUtilTests.m */; };
+		E891AF581D9AB74000B5A1D8 /* ScanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891AF551D9AB74000B5A1D8 /* ScanTableViewCell.swift */; };
+		E891AF591D9AB74000B5A1D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891AF561D9AB74000B5A1D8 /* AppDelegate.swift */; };
+		E891AF5A1D9AB74000B5A1D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891AF571D9AB74000B5A1D8 /* ViewController.swift */; };
+		E891AF5D1D9AB75700B5A1D8 /* TwineDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891AF5B1D9AB75700B5A1D8 /* TwineDeviceViewController.swift */; };
+		E891AF5E1D9AB75700B5A1D8 /* TwineDeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891AF5C1D9AB75700B5A1D8 /* TwineDeviceTableViewCell.swift */; };
+		E891AF631D9AB77500B5A1D8 /* twrLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E891AF5F1D9AB77500B5A1D8 /* twrLogo@2x.png */; };
+		E891AF641D9AB77500B5A1D8 /* twineLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E891AF601D9AB77500B5A1D8 /* twineLogo@2x.png */; };
+		E891AF651D9AB77500B5A1D8 /* icon_color.png in Resources */ = {isa = PBXBuildFile; fileRef = E891AF611D9AB77500B5A1D8 /* icon_color.png */; };
+		E891AF661D9AB77500B5A1D8 /* twr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E891AF621D9AB77500B5A1D8 /* twr.jpg */; };
+		E891AF741D9AB7C900B5A1D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E891AF731D9AB7C900B5A1D8 /* Assets.xcassets */; };
+		E891AF851D9AB98200B5A1D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E891AF811D9AB98200B5A1D8 /* LaunchScreen.storyboard */; };
+		E891AF861D9AB98200B5A1D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E891AF831D9AB98200B5A1D8 /* Main.storyboard */; };
+		E8C3842B1D9D6B2100BD18C1 /* TwineIdentityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3842A1D9D6B2100BD18C1 /* TwineIdentityViewController.swift */; };
+		E8C3843B1D9D782C00BD18C1 /* TwineEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3843A1D9D782C00BD18C1 /* TwineEventViewController.swift */; };
+		E8C3843D1D9D9F6800BD18C1 /* TwineDemographicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3843C1D9D9F6800BD18C1 /* TwineDemographicsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E88CE4221DC25B7F007AB7E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 311DA0DD1CCA6411003B7A67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 311DA0E41CCA6411003B7A67;
+			remoteInfo = TwineSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8B09A811D9AB13000B038B0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05F0BD083F7BB053CC09E53B /* Pods-TwineSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwineSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwineSDK/Pods-TwineSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		4141DE1A1B6F7A87A09C5CEC /* Pods-TwineSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwineSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwineSDKTests/Pods-TwineSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		670E4BBB57614392CA0D222B /* Pods-TwineSDKUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwineSDKUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwineSDKUITests/Pods-TwineSDKUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		71E29B2A9BB8ECFAEBF4776E /* Pods_TwineSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwineSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B2EEC123053F2B43955907A /* Pods_TwineSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwineSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A42F473184261E9011D0AAB /* Pods-TwineSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwineSDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwineSDKTests/Pods-TwineSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD66EED5D3600C681E771E76 /* Pods-TwineSDKUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwineSDKUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwineSDKUITests/Pods-TwineSDKUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D299615EC854F77180B01E64 /* Pods-TwineSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwineSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwineSDK/Pods-TwineSDK.release.xcconfig"; sourceTree = "<group>"; };
+		DF4552F4F08CA3EB3CA42DB2 /* Pods_TwineSDKUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwineSDKUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8379E6F1DC33B0C008E9C0F /* TwineSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwineSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8379E701DC3845F008E9C0F /* TwineDeviceResultTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwineDeviceResultTests.m; sourceTree = "<group>"; };
+		E84CEAE41DA2B32D00F252FF /* TwineLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwineLocationViewController.swift; sourceTree = SOURCE_ROOT; };
+		E84CEAEA1DA2FC4F00F252FF /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = SOURCE_ROOT; };
+		E8503E6C1DCD205E00D3FB57 /* TWRUploadScanResultOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWRUploadScanResultOperation.m; path = FatSDKFiles/TWRUploadScanResultOperation.m; sourceTree = SOURCE_ROOT; };
+		E8503E6D1DCD205E00D3FB57 /* TwineUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwineUtil.m; path = FatSDKFiles/TwineUtil.m; sourceTree = SOURCE_ROOT; };
+		E8503E6E1DCD205E00D3FB57 /* TwineDemographicsMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwineDemographicsMessage.h; path = FatSDKFiles/TwineDemographicsMessage.h; sourceTree = SOURCE_ROOT; };
+		E8503E6F1DCD205E00D3FB57 /* TwineDemographicsMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwineDemographicsMessage.m; path = FatSDKFiles/TwineDemographicsMessage.m; sourceTree = SOURCE_ROOT; };
+		E8503E701DCD205E00D3FB57 /* TwineScanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwineScanManager.h; path = FatSDKFiles/TwineScanManager.h; sourceTree = SOURCE_ROOT; };
+		E8503E711DCD205E00D3FB57 /* TwineScanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwineScanManager.m; path = FatSDKFiles/TwineScanManager.m; sourceTree = SOURCE_ROOT; };
+		E8503E721DCD205E00D3FB57 /* TwineSignalManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwineSignalManager.h; path = FatSDKFiles/TwineSignalManager.h; sourceTree = SOURCE_ROOT; };
+		E8503E731DCD205E00D3FB57 /* TwineSignalManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwineSignalManager.m; path = FatSDKFiles/TwineSignalManager.m; sourceTree = SOURCE_ROOT; };
+		E8503E741DCD205E00D3FB57 /* TWRScanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWRScanManager.h; path = FatSDKFiles/TWRScanManager.h; sourceTree = SOURCE_ROOT; };
+		E8503E751DCD205E00D3FB57 /* TWRScanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWRScanManager.m; path = FatSDKFiles/TWRScanManager.m; sourceTree = SOURCE_ROOT; };
+		E8503E761DCD205E00D3FB57 /* TwineUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwineUtil.h; path = FatSDKFiles/TwineUtil.h; sourceTree = SOURCE_ROOT; };
+		E8503E771DCD205E00D3FB57 /* TWRBLEPeripheralResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWRBLEPeripheralResult.h; path = FatSDKFiles/TWRBLEPeripheralResult.h; sourceTree = SOURCE_ROOT; };
+		E8503E781DCD205E00D3FB57 /* TWRScanResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWRScanResult.m; path = FatSDKFiles/TWRScanResult.m; sourceTree = SOURCE_ROOT; };
+		E8503E791DCD205E00D3FB57 /* TwineIdentityMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwineIdentityMessage.m; path = FatSDKFiles/TwineIdentityMessage.m; sourceTree = SOURCE_ROOT; };
+		E8503E7A1DCD205E00D3FB57 /* TwineIdentityResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwineIdentityResult.h; path = FatSDKFiles/TwineIdentityResult.h; sourceTree = SOURCE_ROOT; };
+		E8503E7B1DCD205E00D3FB57 /* TwineIdentityResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwineIdentityResult.m; path = FatSDKFiles/TwineIdentityResult.m; sourceTree = SOURCE_ROOT; };
+		E8503E7C1DCD205E00D3FB57 /* TwineIdentityMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwineIdentityMessage.h; path = FatSDKFiles/TwineIdentityMessage.h; sourceTree = SOURCE_ROOT; };
+		E8503E7D1DCD205E00D3FB57 /* TWRBluetoothScanOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWRBluetoothScanOperation.m; path = FatSDKFiles/TWRBluetoothScanOperation.m; sourceTree = SOURCE_ROOT; };
+		E8503E7E1DCD205E00D3FB57 /* TwineDemographicsResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwineDemographicsResult.m; path = FatSDKFiles/TwineDemographicsResult.m; sourceTree = SOURCE_ROOT; };
+		E8503E7F1DCD205E00D3FB57 /* TwineDeviceResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwineDeviceResult.m; path = FatSDKFiles/TwineDeviceResult.m; sourceTree = SOURCE_ROOT; };
+		E8503E801DCD205E00D3FB57 /* TwineEventResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwineEventResult.m; path = FatSDKFiles/TwineEventResult.m; sourceTree = SOURCE_ROOT; };
+		E8503E811DCD205E00D3FB57 /* TwineLocationResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwineLocationResult.m; path = FatSDKFiles/TwineLocationResult.m; sourceTree = SOURCE_ROOT; };
+		E8503E821DCD205E00D3FB57 /* TwineDeviceResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwineDeviceResult.h; path = FatSDKFiles/TwineDeviceResult.h; sourceTree = SOURCE_ROOT; };
+		E8503E831DCD205E00D3FB57 /* TwineEventMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwineEventMessage.m; path = FatSDKFiles/TwineEventMessage.m; sourceTree = SOURCE_ROOT; };
+		E8503E841DCD205F00D3FB57 /* TwineDemographicsResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwineDemographicsResult.h; path = FatSDKFiles/TwineDemographicsResult.h; sourceTree = SOURCE_ROOT; };
+		E8503E851DCD205F00D3FB57 /* TwineEventMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwineEventMessage.h; path = FatSDKFiles/TwineEventMessage.h; sourceTree = SOURCE_ROOT; };
+		E8503E861DCD205F00D3FB57 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "FatSDKFiles/NSString+MD5.m"; sourceTree = SOURCE_ROOT; };
+		E8503E871DCD205F00D3FB57 /* TwineEventResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwineEventResult.h; path = FatSDKFiles/TwineEventResult.h; sourceTree = SOURCE_ROOT; };
+		E8503E881DCD205F00D3FB57 /* TWRLocationScanOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWRLocationScanOperation.m; path = FatSDKFiles/TWRLocationScanOperation.m; sourceTree = SOURCE_ROOT; };
+		E8503E891DCD205F00D3FB57 /* TwineLocationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwineLocationResult.h; path = FatSDKFiles/TwineLocationResult.h; sourceTree = SOURCE_ROOT; };
+		E8503E8A1DCD205F00D3FB57 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "FatSDKFiles/NSString+MD5.h"; sourceTree = SOURCE_ROOT; };
+		E8503E8B1DCD205F00D3FB57 /* TWRBLEPeripheralResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWRBLEPeripheralResult.m; path = FatSDKFiles/TWRBLEPeripheralResult.m; sourceTree = SOURCE_ROOT; };
+		E8503E8C1DCD205F00D3FB57 /* TWRBluetoothScanOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWRBluetoothScanOperation.h; path = FatSDKFiles/TWRBluetoothScanOperation.h; sourceTree = SOURCE_ROOT; };
+		E8503E8D1DCD205F00D3FB57 /* TWRDeviceScanOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWRDeviceScanOperation.h; path = FatSDKFiles/TWRDeviceScanOperation.h; sourceTree = SOURCE_ROOT; };
+		E8503E8E1DCD205F00D3FB57 /* TWRDeviceScanOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWRDeviceScanOperation.m; path = FatSDKFiles/TWRDeviceScanOperation.m; sourceTree = SOURCE_ROOT; };
+		E8503E8F1DCD205F00D3FB57 /* TWRLocationScanOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWRLocationScanOperation.h; path = FatSDKFiles/TWRLocationScanOperation.h; sourceTree = SOURCE_ROOT; };
+		E8503E901DCD205F00D3FB57 /* TWRScanResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWRScanResult.h; path = FatSDKFiles/TWRScanResult.h; sourceTree = SOURCE_ROOT; };
+		E8503E911DCD205F00D3FB57 /* TWRUploadScanResultOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWRUploadScanResultOperation.h; path = FatSDKFiles/TWRUploadScanResultOperation.h; sourceTree = SOURCE_ROOT; };
+		E8503E921DCD205F00D3FB57 /* TWRWifiScanOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWRWifiScanOperation.h; path = FatSDKFiles/TWRWifiScanOperation.h; sourceTree = SOURCE_ROOT; };
+		E8503E931DCD205F00D3FB57 /* TWRWifiScanOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWRWifiScanOperation.m; path = FatSDKFiles/TWRWifiScanOperation.m; sourceTree = SOURCE_ROOT; };
+		E8786FAB1DB9515400D8AE58 /* TwineSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TwineSDK-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		E88CE41D1DC25B7F007AB7E3 /* TwineSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwineSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E88CE41F1DC25B7F007AB7E3 /* TwineSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwineSDKTests.m; sourceTree = "<group>"; };
+		E88CE4211DC25B7F007AB7E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E88CE4271DC32975007AB7E3 /* TwineDemographicsResultTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwineDemographicsResultTests.m; sourceTree = "<group>"; };
+		E88CE4291DC3298C007AB7E3 /* TwineEventResultTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwineEventResultTests.m; sourceTree = "<group>"; };
+		E88CE42B1DC3299E007AB7E3 /* TwineIdentityResultTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwineIdentityResultTests.m; sourceTree = "<group>"; };
+		E88CE42D1DC329AC007AB7E3 /* TwineLocationResultTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwineLocationResultTests.m; sourceTree = "<group>"; };
+		E88CE42F1DC33813007AB7E3 /* TwineUtilTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwineUtilTests.m; sourceTree = "<group>"; };
+		E891AF551D9AB74000B5A1D8 /* ScanTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScanTableViewCell.swift; path = TwineSDK/ScanTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		E891AF561D9AB74000B5A1D8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TwineSDK/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		E891AF571D9AB74000B5A1D8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = TwineSDK/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		E891AF5B1D9AB75700B5A1D8 /* TwineDeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwineDeviceViewController.swift; path = TwineSDK/TwineDeviceViewController.swift; sourceTree = SOURCE_ROOT; };
+		E891AF5C1D9AB75700B5A1D8 /* TwineDeviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwineDeviceTableViewCell.swift; path = TwineSDK/TwineDeviceTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		E891AF5F1D9AB77500B5A1D8 /* twrLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twrLogo@2x.png"; path = "TwineSDK/twrLogo@2x.png"; sourceTree = SOURCE_ROOT; };
+		E891AF601D9AB77500B5A1D8 /* twineLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twineLogo@2x.png"; path = "TwineSDK/twineLogo@2x.png"; sourceTree = SOURCE_ROOT; };
+		E891AF611D9AB77500B5A1D8 /* icon_color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_color.png; path = TwineSDK/icon_color.png; sourceTree = SOURCE_ROOT; };
+		E891AF621D9AB77500B5A1D8 /* twr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = twr.jpg; path = TwineSDK/twr.jpg; sourceTree = SOURCE_ROOT; };
+		E891AF731D9AB7C900B5A1D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TwineSDK/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		E891AF751D9AB7EB00B5A1D8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TwineSDK/Info.plist; sourceTree = SOURCE_ROOT; };
+		E891AF821D9AB98200B5A1D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TwineSDK/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		E891AF841D9AB98200B5A1D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TwineSDK/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		E8C3842A1D9D6B2100BD18C1 /* TwineIdentityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwineIdentityViewController.swift; sourceTree = SOURCE_ROOT; };
+		E8C3843A1D9D782C00BD18C1 /* TwineEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwineEventViewController.swift; sourceTree = SOURCE_ROOT; };
+		E8C3843C1D9D9F6800BD18C1 /* TwineDemographicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwineDemographicsViewController.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		311DA0E21CCA6411003B7A67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19877E12C53C7FC285BA7AE6 /* Pods_TwineSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E88CE41A1DC25B7F007AB7E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		311DA0DC1CCA6411003B7A67 = {
+			isa = PBXGroup;
+			children = (
+				311DA0E71CCA6411003B7A67 /* TwineSDK */,
+				E298EA4FB578410C74A5C7AB /* Pods */,
+				E88CE41E1DC25B7F007AB7E3 /* TwineSDKTests */,
+				6FF5A45A56D7C74371563ABA /* Frameworks */,
+				E88CE41D1DC25B7F007AB7E3 /* TwineSDKTests.xctest */,
+				E8379E6F1DC33B0C008E9C0F /* TwineSDK.app */,
+			);
+			sourceTree = "<group>";
+		};
+		311DA0E71CCA6411003B7A67 /* TwineSDK */ = {
+			isa = PBXGroup;
+			children = (
+				E8786FAB1DB9515400D8AE58 /* TwineSDK-Bridging-Header.h */,
+				E8786F801DB94F9700D8AE58 /* TwineSDK */,
+				E891AF811D9AB98200B5A1D8 /* LaunchScreen.storyboard */,
+				E891AF831D9AB98200B5A1D8 /* Main.storyboard */,
+				E8F1EDDA1D6C9DC200653087 /* UI */,
+				E891AF751D9AB7EB00B5A1D8 /* Info.plist */,
+				E891AF731D9AB7C900B5A1D8 /* Assets.xcassets */,
+			);
+			name = TwineSDK;
+			path = TWRSwiftSDK;
+			sourceTree = "<group>";
+		};
+		6FF5A45A56D7C74371563ABA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71E29B2A9BB8ECFAEBF4776E /* Pods_TwineSDK.framework */,
+				8B2EEC123053F2B43955907A /* Pods_TwineSDKTests.framework */,
+				DF4552F4F08CA3EB3CA42DB2 /* Pods_TwineSDKUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E298EA4FB578410C74A5C7AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05F0BD083F7BB053CC09E53B /* Pods-TwineSDK.debug.xcconfig */,
+				D299615EC854F77180B01E64 /* Pods-TwineSDK.release.xcconfig */,
+				4141DE1A1B6F7A87A09C5CEC /* Pods-TwineSDKTests.debug.xcconfig */,
+				9A42F473184261E9011D0AAB /* Pods-TwineSDKTests.release.xcconfig */,
+				670E4BBB57614392CA0D222B /* Pods-TwineSDKUITests.debug.xcconfig */,
+				CD66EED5D3600C681E771E76 /* Pods-TwineSDKUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E85078B91D6B8A4B00F93215 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E891AF5F1D9AB77500B5A1D8 /* twrLogo@2x.png */,
+				E891AF601D9AB77500B5A1D8 /* twineLogo@2x.png */,
+				E891AF611D9AB77500B5A1D8 /* icon_color.png */,
+				E891AF621D9AB77500B5A1D8 /* twr.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E8786F801DB94F9700D8AE58 /* TwineSDK */ = {
+			isa = PBXGroup;
+			children = (
+				E8503E6C1DCD205E00D3FB57 /* TWRUploadScanResultOperation.m */,
+				E8503E6D1DCD205E00D3FB57 /* TwineUtil.m */,
+				E8503E6E1DCD205E00D3FB57 /* TwineDemographicsMessage.h */,
+				E8503E6F1DCD205E00D3FB57 /* TwineDemographicsMessage.m */,
+				E8503E701DCD205E00D3FB57 /* TwineScanManager.h */,
+				E8503E711DCD205E00D3FB57 /* TwineScanManager.m */,
+				E8503E721DCD205E00D3FB57 /* TwineSignalManager.h */,
+				E8503E731DCD205E00D3FB57 /* TwineSignalManager.m */,
+				E8503E741DCD205E00D3FB57 /* TWRScanManager.h */,
+				E8503E751DCD205E00D3FB57 /* TWRScanManager.m */,
+				E8503E761DCD205E00D3FB57 /* TwineUtil.h */,
+				E8503E771DCD205E00D3FB57 /* TWRBLEPeripheralResult.h */,
+				E8503E781DCD205E00D3FB57 /* TWRScanResult.m */,
+				E8503E791DCD205E00D3FB57 /* TwineIdentityMessage.m */,
+				E8503E7A1DCD205E00D3FB57 /* TwineIdentityResult.h */,
+				E8503E7B1DCD205E00D3FB57 /* TwineIdentityResult.m */,
+				E8503E7C1DCD205E00D3FB57 /* TwineIdentityMessage.h */,
+				E8503E7D1DCD205E00D3FB57 /* TWRBluetoothScanOperation.m */,
+				E8503E7E1DCD205E00D3FB57 /* TwineDemographicsResult.m */,
+				E8503E7F1DCD205E00D3FB57 /* TwineDeviceResult.m */,
+				E8503E801DCD205E00D3FB57 /* TwineEventResult.m */,
+				E8503E811DCD205E00D3FB57 /* TwineLocationResult.m */,
+				E8503E821DCD205E00D3FB57 /* TwineDeviceResult.h */,
+				E8503E831DCD205E00D3FB57 /* TwineEventMessage.m */,
+				E8503E841DCD205F00D3FB57 /* TwineDemographicsResult.h */,
+				E8503E851DCD205F00D3FB57 /* TwineEventMessage.h */,
+				E8503E861DCD205F00D3FB57 /* NSString+MD5.m */,
+				E8503E871DCD205F00D3FB57 /* TwineEventResult.h */,
+				E8503E881DCD205F00D3FB57 /* TWRLocationScanOperation.m */,
+				E8503E891DCD205F00D3FB57 /* TwineLocationResult.h */,
+				E8503E8A1DCD205F00D3FB57 /* NSString+MD5.h */,
+				E8503E8B1DCD205F00D3FB57 /* TWRBLEPeripheralResult.m */,
+				E8503E8C1DCD205F00D3FB57 /* TWRBluetoothScanOperation.h */,
+				E8503E8D1DCD205F00D3FB57 /* TWRDeviceScanOperation.h */,
+				E8503E8E1DCD205F00D3FB57 /* TWRDeviceScanOperation.m */,
+				E8503E8F1DCD205F00D3FB57 /* TWRLocationScanOperation.h */,
+				E8503E901DCD205F00D3FB57 /* TWRScanResult.h */,
+				E8503E911DCD205F00D3FB57 /* TWRUploadScanResultOperation.h */,
+				E8503E921DCD205F00D3FB57 /* TWRWifiScanOperation.h */,
+				E8503E931DCD205F00D3FB57 /* TWRWifiScanOperation.m */,
+			);
+			name = TwineSDK;
+			sourceTree = "<group>";
+		};
+		E88CE41E1DC25B7F007AB7E3 /* TwineSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				E88CE41F1DC25B7F007AB7E3 /* TwineSDKTests.m */,
+				E88CE4291DC3298C007AB7E3 /* TwineEventResultTests.m */,
+				E88CE4271DC32975007AB7E3 /* TwineDemographicsResultTests.m */,
+				E88CE42B1DC3299E007AB7E3 /* TwineIdentityResultTests.m */,
+				E8379E701DC3845F008E9C0F /* TwineDeviceResultTests.m */,
+				E88CE42D1DC329AC007AB7E3 /* TwineLocationResultTests.m */,
+				E88CE42F1DC33813007AB7E3 /* TwineUtilTests.m */,
+				E88CE4211DC25B7F007AB7E3 /* Info.plist */,
+			);
+			path = TwineSDKTests;
+			sourceTree = "<group>";
+		};
+		E8F1EDDA1D6C9DC200653087 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E891AF561D9AB74000B5A1D8 /* AppDelegate.swift */,
+				E891AF571D9AB74000B5A1D8 /* ViewController.swift */,
+				E891AF551D9AB74000B5A1D8 /* ScanTableViewCell.swift */,
+				E891AF5B1D9AB75700B5A1D8 /* TwineDeviceViewController.swift */,
+				E891AF5C1D9AB75700B5A1D8 /* TwineDeviceTableViewCell.swift */,
+				E8C3842A1D9D6B2100BD18C1 /* TwineIdentityViewController.swift */,
+				E8C3843A1D9D782C00BD18C1 /* TwineEventViewController.swift */,
+				E8C3843C1D9D9F6800BD18C1 /* TwineDemographicsViewController.swift */,
+				E84CEAE41DA2B32D00F252FF /* TwineLocationViewController.swift */,
+				E84CEAEA1DA2FC4F00F252FF /* ViewControllerExtension.swift */,
+				E85078B91D6B8A4B00F93215 /* Images */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		311DA0E41CCA6411003B7A67 /* TwineSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311DA10D1CCA6412003B7A67 /* Build configuration list for PBXNativeTarget "TwineSDK" */;
+			buildPhases = (
+				96CD719EE6F38EC0BC5B7EF6 /* [CP] Check Pods Manifest.lock */,
+				311DA0E11CCA6411003B7A67 /* Sources */,
+				311DA0E21CCA6411003B7A67 /* Frameworks */,
+				311DA0E31CCA6411003B7A67 /* Resources */,
+				E8B09A811D9AB13000B038B0 /* Embed Frameworks */,
+				13F73EA527A97DE654C90E84 /* [CP] Embed Pods Frameworks */,
+				396933A623934D0C26BC3E4D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwineSDK;
+			productName = TWRSwiftSDK;
+			productReference = E8379E6F1DC33B0C008E9C0F /* TwineSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E88CE41C1DC25B7F007AB7E3 /* TwineSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E88CE4241DC25B7F007AB7E3 /* Build configuration list for PBXNativeTarget "TwineSDKTests" */;
+			buildPhases = (
+				E88CE4191DC25B7F007AB7E3 /* Sources */,
+				E88CE41A1DC25B7F007AB7E3 /* Frameworks */,
+				E88CE41B1DC25B7F007AB7E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E88CE4231DC25B7F007AB7E3 /* PBXTargetDependency */,
+			);
+			name = TwineSDKTests;
+			productName = TwineSDKTests;
+			productReference = E88CE41D1DC25B7F007AB7E3 /* TwineSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		311DA0DD1CCA6411003B7A67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "JP Mohler";
+				TargetAttributes = {
+					311DA0E41CCA6411003B7A67 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = LW8LLC26KA;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+					E88CE41C1DC25B7F007AB7E3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = H863P98M39;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 311DA0E41CCA6411003B7A67;
+					};
+				};
+			};
+			buildConfigurationList = 311DA0E01CCA6411003B7A67 /* Build configuration list for PBXProject "TwineSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 311DA0DC1CCA6411003B7A67;
+			productRefGroup = 311DA0DC1CCA6411003B7A67;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				311DA0E41CCA6411003B7A67 /* TwineSDK */,
+				E88CE41C1DC25B7F007AB7E3 /* TwineSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		311DA0E31CCA6411003B7A67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E891AF851D9AB98200B5A1D8 /* LaunchScreen.storyboard in Resources */,
+				E891AF641D9AB77500B5A1D8 /* twineLogo@2x.png in Resources */,
+				E891AF741D9AB7C900B5A1D8 /* Assets.xcassets in Resources */,
+				E891AF651D9AB77500B5A1D8 /* icon_color.png in Resources */,
+				E891AF861D9AB98200B5A1D8 /* Main.storyboard in Resources */,
+				E891AF661D9AB77500B5A1D8 /* twr.jpg in Resources */,
+				E891AF631D9AB77500B5A1D8 /* twrLogo@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E88CE41B1DC25B7F007AB7E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13F73EA527A97DE654C90E84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwineSDK/Pods-TwineSDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		396933A623934D0C26BC3E4D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwineSDK/Pods-TwineSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96CD719EE6F38EC0BC5B7EF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		311DA0E11CCA6411003B7A67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8503E9F1DCD205F00D3FB57 /* TwineDeviceResult.m in Sources */,
+				E8503E971DCD205F00D3FB57 /* TwineScanManager.m in Sources */,
+				E891AF5D1D9AB75700B5A1D8 /* TwineDeviceViewController.swift in Sources */,
+				E8503E941DCD205F00D3FB57 /* TWRUploadScanResultOperation.m in Sources */,
+				E8C3842B1D9D6B2100BD18C1 /* TwineIdentityViewController.swift in Sources */,
+				E8503EA01DCD205F00D3FB57 /* TwineEventResult.m in Sources */,
+				E891AF5E1D9AB75700B5A1D8 /* TwineDeviceTableViewCell.swift in Sources */,
+				E8C3843B1D9D782C00BD18C1 /* TwineEventViewController.swift in Sources */,
+				E891AF581D9AB74000B5A1D8 /* ScanTableViewCell.swift in Sources */,
+				E84CEAEB1DA2FC4F00F252FF /* ViewControllerExtension.swift in Sources */,
+				E8503E991DCD205F00D3FB57 /* TWRScanManager.m in Sources */,
+				E8503E9C1DCD205F00D3FB57 /* TwineIdentityResult.m in Sources */,
+				E8503E951DCD205F00D3FB57 /* TwineUtil.m in Sources */,
+				E8503E961DCD205F00D3FB57 /* TwineDemographicsMessage.m in Sources */,
+				E8503E9A1DCD205F00D3FB57 /* TWRScanResult.m in Sources */,
+				E8503EA11DCD205F00D3FB57 /* TwineLocationResult.m in Sources */,
+				E891AF591D9AB74000B5A1D8 /* AppDelegate.swift in Sources */,
+				E8503E981DCD205F00D3FB57 /* TwineSignalManager.m in Sources */,
+				E8503EA51DCD205F00D3FB57 /* TWRBLEPeripheralResult.m in Sources */,
+				E8503EA41DCD205F00D3FB57 /* TWRLocationScanOperation.m in Sources */,
+				E8503E9D1DCD205F00D3FB57 /* TWRBluetoothScanOperation.m in Sources */,
+				E891AF5A1D9AB74000B5A1D8 /* ViewController.swift in Sources */,
+				E8503EA31DCD205F00D3FB57 /* NSString+MD5.m in Sources */,
+				E8503EA71DCD205F00D3FB57 /* TWRWifiScanOperation.m in Sources */,
+				E8503EA21DCD205F00D3FB57 /* TwineEventMessage.m in Sources */,
+				E8503E9B1DCD205F00D3FB57 /* TwineIdentityMessage.m in Sources */,
+				E8503E9E1DCD205F00D3FB57 /* TwineDemographicsResult.m in Sources */,
+				E84CEAE51DA2B32D00F252FF /* TwineLocationViewController.swift in Sources */,
+				E8503EA61DCD205F00D3FB57 /* TWRDeviceScanOperation.m in Sources */,
+				E8C3843D1D9D9F6800BD18C1 /* TwineDemographicsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E88CE4191DC25B7F007AB7E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E88CE4201DC25B7F007AB7E3 /* TwineSDKTests.m in Sources */,
+				E88CE4281DC32975007AB7E3 /* TwineDemographicsResultTests.m in Sources */,
+				E88CE42A1DC3298C007AB7E3 /* TwineEventResultTests.m in Sources */,
+				E88CE42E1DC329AC007AB7E3 /* TwineLocationResultTests.m in Sources */,
+				E88CE42C1DC3299E007AB7E3 /* TwineIdentityResultTests.m in Sources */,
+				E8379E711DC3845F008E9C0F /* TwineDeviceResultTests.m in Sources */,
+				E88CE4301DC33813007AB7E3 /* TwineUtilTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E88CE4231DC25B7F007AB7E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 311DA0E41CCA6411003B7A67 /* TwineSDK */;
+			targetProxy = E88CE4221DC25B7F007AB7E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E891AF811D9AB98200B5A1D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E891AF821D9AB98200B5A1D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E891AF831D9AB98200B5A1D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E891AF841D9AB98200B5A1D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		311DA10B1CCA6412003B7A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		311DA10C1CCA6412003B7A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		311DA10E1CCA6412003B7A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05F0BD083F7BB053CC09E53B /* Pods-TwineSDK.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = LW8LLC26KA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TwineSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TWR.twine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TwineSDK-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		311DA10F1CCA6412003B7A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D299615EC854F77180B01E64 /* Pods-TwineSDK.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = LW8LLC26KA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TwineSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TWR.twine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TwineSDK-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E88CE4251DC25B7F007AB7E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = H863P98M39;
+				INFOPLIST_FILE = TwineSDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.twr.TwineSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwineSDK.app/TwineSDK";
+			};
+			name = Debug;
+		};
+		E88CE4261DC25B7F007AB7E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = H863P98M39;
+				INFOPLIST_FILE = TwineSDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.twr.TwineSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwineSDK.app/TwineSDK";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		311DA0E01CCA6411003B7A67 /* Build configuration list for PBXProject "TwineSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311DA10B1CCA6412003B7A67 /* Debug */,
+				311DA10C1CCA6412003B7A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		311DA10D1CCA6412003B7A67 /* Build configuration list for PBXNativeTarget "TwineSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311DA10E1CCA6412003B7A67 /* Debug */,
+				311DA10F1CCA6412003B7A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E88CE4241DC25B7F007AB7E3 /* Build configuration list for PBXNativeTarget "TwineSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E88CE4251DC25B7F007AB7E3 /* Debug */,
+				E88CE4261DC25B7F007AB7E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 311DA0DD1CCA6411003B7A67 /* Project object */;
+}

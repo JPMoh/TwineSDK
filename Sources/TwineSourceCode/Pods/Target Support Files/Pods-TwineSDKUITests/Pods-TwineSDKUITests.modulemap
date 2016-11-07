@@ -1,0 +1,6 @@
+framework module Pods_TwineSDKUITests {
+  umbrella header "Pods-TwineSDKUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

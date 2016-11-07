@@ -1,0 +1,10 @@
+framework module SwiftSDKFramework {
+  umbrella header "SwiftSDKFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftSDKFramework.Swift {
+    header "SwiftSDKFramework-Swift.h"
+}

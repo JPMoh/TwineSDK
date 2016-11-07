@@ -1,0 +1,6 @@
+framework module Pods_TwineSDK {
+  umbrella header "Pods-TwineSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
