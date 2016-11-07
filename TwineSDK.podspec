@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
         :git => 'https://github.com/JPMoh/TwineSDK.git',
         :tag => s.version.to_s
     }
-    s.source_files      = 'Sources/TwineSourceCode/FatSDKFiles/TwineDemographicsResult.h'
+    s.source_files      = 'Sources/TwineSourceCode/FatSDKFiles/*.{m,h}'
     s.requires_arc      = true
 
 end
